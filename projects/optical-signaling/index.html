@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Optical Signaling Device (EE 230) — Cole Dustin</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a class="title" href="../../index.html">Cole Dustin’s Portfolio</a>
+      <span class="tag">RF Electrical Engineer</span>
+    </div>
+    <nav class="nav" aria-label="Primary navigation">
+      <a data-nav href="../../index.html#home">Home</a>
+      <a data-nav href="../../index.html#senior-design">Senior Design</a>
+      <a data-nav href="../../index.html#projects">Projects</a>
+      <a data-nav href="../../resume/index.html">Resume</a>
+      <a data-nav href="../../reflections/index.html">Reflections</a>
+      <a data-nav href="../../contact/index.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="../../index.html#projects">← Back to Projects</a>
+    </div>
+
+    <h1>Optical Signaling Device (EE 230)</h1>
+    <p class="subhead">Infrared transmitter/receiver pair using oscillators, filters, and amplification to detect two signaling tones.</p>
+
+    <div class="meta" style="margin:12px 0 14px;">
+      <span class="pill">Analog circuits</span><span class="pill">Filters</span><span class="pill">Op-amps</span><span class="pill">Prototyping</span>
+    </div>
+
+    <div class="figure" style="margin:16px 0;">
+      <strong>[IMAGE HERE]</strong> Replace this block with an image or gallery.
+      <div style="margin-top:8px;">Suggestion: put images in <code>/assets/img/</code> and reference them here.</div>
+    </div>
+
+    <div class="card pad">
+      <h2 style="margin-top:0;">Overview</h2>
+      <ul>
+        <li>Designed a transmitter with two selectable tones (1 kHz and 10 kHz).</li>
+<li>Designed a receiver using filtering + buffering to differentiate tones and drive indicator LEDs.</li>
+<li>Validated in lab; prototype reached 30+ inches range.</li>
+      </ul>
+    </div>
+
+    <h2>System Requirements</h2>
+
+<ul>
+  <li>Transmitter outputs two distinct tones to an IR LED; receiver uses filtering + amplification to light one of two indicator LEDs.</li>
+  <li>Target distance: up to ~2 feet between transmitter and receiver.</li>
+</ul>
+
+<h2>Design Approach</h2>
+
+<ul>
+  <li>Built two Wien-bridge oscillators (1 kHz and 10 kHz) and used a summing amplifier with DC offset to drive the IR LED.</li>
+  <li>Receiver used filtering stages (high-pass + band-pass) and buffering/amplification to separate tones and reduce false triggers.</li>
+</ul>
+
+<h2>Outcome</h2>
+
+<div class="callout">
+  Achieved a working prototype with a measured range of <strong>30+ inches</strong> (and identified ways to extend range with higher LED drive current).
+  <br/><strong>[IMAGE HERE]</strong> Add transmitter/receiver schematics and filter response plots.
+</div>
+
+
+
+    <div style="height:16px"></div>
+    <div class="card pad soft">
+      <strong>Files:</strong>
+      <div style="color:var(--muted); margin-top:6px;">
+        If you want to attach reports, PDFs, or datasheets, drop them into <code>/assets/docs/</code> and link them here.
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div class="col-8">
+        <div style="font-weight:750; color: var(--ink); margin-bottom:6px;">Cole Dustin</div>
+        <div>Built for GitHub Pages. Iowa State-inspired colors (cardinal + gold).</div>
+      </div>
+      <div class="col-4" style="text-align:right;">
+        <a class="underline" href="../../contact/index.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,58 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Personal homepage of Cole Dustin" />
-  <title>Cole Dustin</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .container {
-      text-align: center;
-      max-width: 600px;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.25em;
-    }
-    p {
-      font-size: 1.2em;
-      margin-top: 0;
-    }
-    .links a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cole Dustin’s Portfolio</title>
+  <meta name="description" content="Cole Dustin – RF Electrical Engineer. Portfolio featuring senior design (BESS) and Iowa State projects." />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a class="title" href="./index.html">Cole Dustin’s Portfolio</a>
+      <span class="tag">RF Electrical Engineer</span>
+    </div>
+    <nav class="nav" aria-label="Primary navigation">
+      <a data-nav href="./index.html#home">Home</a>
+      <a data-nav href="./index.html#senior-design">Senior Design</a>
+      <a data-nav href="./index.html#projects">Projects</a>
+      <a data-nav href="./resume/index.html">Resume</a>
+      <a data-nav href="./reflections/index.html">Reflections</a>
+      <a data-nav href="./contact/index.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="card pad">
+          <div class="kicker"><span class="dot"></span> Iowa State University • Projects + Senior Design</div>
+          <h1>Cole Dustin</h1>
+          <p class="subhead">
+            RF Electrical Engineer with hands-on experience designing and debugging hardware—from
+            microwave-frequency PCBs to sensor-based embedded systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#senior-design">View Senior Design</a>
+            <a class="btn" href="#projects">Browse Projects</a>
+            <a class="btn" href="./resume/index.html">Resume</a>
+          </div>
+          <div style="margin-top:14px" class="callout">
+            Tip: Anywhere you see <strong>[IMAGE HERE]</strong>, you can drop an image into <code>/assets/img/</code> and update the page to point to it.
+          </div>
+        </div>
+
+        <aside class="card stats">
+          <div class="stat">
+            <div class="k">Focus</div>
+            <div class="v">RF • Circuits • Systems</div>
+          </div>
+          <div class="stat">
+            <div class="k">Theme</div>
+            <div class="v">Cardinal + Gold</div>
+          </div>
+          <div class="stat">
+            <div class="k">What’s new</div>
+            <div class="v">MIMO FMCW Radar (in progress)</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="senior-design">
+    <div class="container">
+      <div class="section-title">
+        <h2>Senior Design</h2>
+        <p>Featured capstone project</p>
+      </div>
+
+      <div class="grid">
+        <div class="col-12 card project-card">
+          <div class="project-thumb">
+            <div class="thumb-label">[IMAGE HERE] Add a hero image for BESS</div>
+          </div>
+          <div class="project-body">
+            <h3>Battery Energy Storage System (BESS)</h3>
+            <p>
+              <strong>Project detail page:</strong> sizing, standards, safety considerations, and design decisions.
+              (Add your specific role + specs when you’re ready.)
+            </p>
+            <div class="meta">
+              <span class="pill">Senior design</span>
+              <span class="pill">Standards-driven design</span>
+              <span class="pill">Safety + maintainability</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/bess/index.html">Open project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>Major Projects</h2>
+        <p>Three highlighted Iowa State projects + one in progress</p>
+      </div>
+
+      <div class="grid">
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/microwave-pcb.jpg" alt="Microwave PCB photo" />
+            <div class="thumb-label">Microwave PCB (photo)</div>
+          </div>
+          <div class="project-body">
+            <h3>Microwave Frequency PCB</h3>
+            <p>PCB design targeting a microwave-frequency signal chain (oscillator + amplifier + filter). Add your measured results + plots later.</p>
+            <div class="meta">
+              <span class="pill">RF</span><span class="pill">PCB</span><span class="pill">Lab validation</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/microwave-pcb/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <div class="thumb-label">[IMAGE HERE] Optical signaling device</div>
+          </div>
+          <div class="project-body">
+            <h3>Optical Signaling Device (EE 230)</h3>
+            <p>Designed a transmitter/receiver pair using IR LED + photodiode, with filtering + amplification to distinguish two tones.</p>
+            <div class="meta">
+              <span class="pill">Analog circuits</span><span class="pill">Filters</span><span class="pill">Prototyping</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/optical-signaling/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <div class="thumb-label">[IMAGE HERE] MIMO FMCW Radar</div>
+          </div>
+          <div class="project-body">
+            <h3>MIMO FMCW Radar (in progress)</h3>
+            <p>Current semester project. This page is set up now; you can fill it in as deliverables come together.</p>
+            <div class="meta">
+              <span class="pill">Radar</span><span class="pill">MIMO</span><span class="pill">In progress</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/mimo-fmcw-radar/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <div class="thumb-label">[IMAGE HERE] “Add another major project if you want”</div>
+          </div>
+          <div class="project-body">
+            <h3>(Optional) Additional Major Project</h3>
+            <p>This slot is intentionally open. If you later decide to swap in a different major project, you can.</p>
+            <div class="meta">
+              <span class="pill">Placeholder</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="more-projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>More Projects</h2>
+        <p>Smaller class projects (still worth showing)</p>
+      </div>
+
+      <div class="grid">
+        <article class="col-6 card pad">
+          <h3 style="margin-top:0;">Bubble Sort in Digital Logic (CPR E 281)</h3>
+          <p style="color:var(--muted); margin-top:0;">
+            Implemented a register-file + FSM-based bubble-sort design in digital logic (with a comparator built from an adder/subtractor).
+          </p>
+          <a class="btn small primary" href="./projects/cpre281-bubble-sort/index.html">Open project</a>
+        </article>
+
+        <article class="col-6 card pad">
+          <h3 style="margin-top:0;">Maze-Solving Robot Proposal (CPR E 288)</h3>
+          <p style="color:var(--muted); margin-top:0;">
+            Proposal + design vision for a robot to navigate a maze and support mapping/search & rescue use cases.
+          </p>
+          <a class="btn small primary" href="./projects/cpre288-maze-robot/index.html">Open project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About</h2>
+        <p>A short professional summary</p>
+      </div>
+
+      <div class="grid">
+        <div class="col-12 card pad">
+          <p style="margin-top:0; color:var(--muted);">
+            I like learning by building. I’m especially interested in how RF/microwave systems interact with the real world—and how to take designs
+            from simulation to hardware through careful measurement, iteration, and debugging.
+          </p>
+          <div class="meta">
+            <span class="pill">RF + Microwave</span>
+            <span class="pill">PCB design</span>
+            <span class="pill">Testing + debugging</span>
+            <span class="pill">Systems thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
   <div class="container">
-    <h1>Hello, I'm Cole Dustin</h1>
-    <p>Welcome to my personal website.</p>
-    <div class="links">
-      <a href="https://github.com/cdustin28" target="_blank">GitHub</a>
-      <a href="mailto:email@coledustin.com">Email Me</a>
+    <div class="grid">
+      <div class="col-8">
+        <div style="font-weight:750; color: var(--ink); margin-bottom:6px;">Cole Dustin</div>
+        <div>Built for GitHub Pages. Iowa State-inspired colors (cardinal + gold).</div>
+      </div>
+      <div class="col-4" style="text-align:right;">
+        <a class="underline" href="./contact/index.html">Contact</a>
+      </div>
     </div>
   </div>
+</footer>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bubble Sort (CPR E 281) — Cole Dustin</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a class="title" href="../../index.html">Cole Dustin’s Portfolio</a>
+      <span class="tag">RF Electrical Engineer</span>
+    </div>
+    <nav class="nav" aria-label="Primary navigation">
+      <a data-nav href="../../index.html#home">Home</a>
+      <a data-nav href="../../index.html#senior-design">Senior Design</a>
+      <a data-nav href="../../index.html#projects">Projects</a>
+      <a data-nav href="../../resume/index.html">Resume</a>
+      <a data-nav href="../../reflections/index.html">Reflections</a>
+      <a data-nav href="../../contact/index.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="../../index.html#projects">← Back to Projects</a>
+    </div>
+
+    <h1>Bubble Sort (CPR E 281)</h1>
+    <p class="subhead">Digital logic final project: register file + FSM-based bubble sort design.</p>
+
+    <div class="meta" style="margin:12px 0 14px;">
+      <span class="pill">Digital logic</span><span class="pill">FSM</span><span class="pill">Verilog/BDF</span><span class="pill">Debugging</span>
+    </div>
+
+    <div class="figure" style="margin:16px 0;">
+      <strong>[IMAGE HERE]</strong> Replace this block with an image or gallery.
+      <div style="margin-top:8px;">Suggestion: put images in <code>/assets/img/</code> and reference them here.</div>
+    </div>
+
+    <div class="card pad">
+      <h2 style="margin-top:0;">Overview</h2>
+      <ul>
+        <li>Built a register-file based design to load and display eight values.</li>
+<li>Designed dual FSM approach to select adjacent registers for bubble sort comparisons.</li>
+<li>Implemented compare/swap logic with adder/subtractor and auxiliary registers.</li>
+      </ul>
+    </div>
+
+    <h2>How It Worked</h2>
+
+<ul>
+  <li>Register file held eight 3-bit numbers; FSM logic selected registers for compare/swap operations.</li>
+  <li>Comparator implemented via adder/subtractor (2's complement) to determine ordering based on sign bit.</li>
+  <li>Auxiliary registers buffered values during swap/writeback.</li>
+</ul>
+
+<h2>Challenges</h2>
+
+<div class="callout">
+  The main blocker was timing: difficulty writing to two registers within one clock cycle, requiring multiple clock domains and careful sequencing.
+  <br/><strong>[IMAGE HERE]</strong> Add top-level block diagram and FSM state diagrams.
+</div>
+
+
+
+    <div style="height:16px"></div>
+    <div class="card pad soft">
+      <strong>Files:</strong>
+      <div style="color:var(--muted); margin-top:6px;">
+        If you want to attach reports, PDFs, or datasheets, drop them into <code>/assets/docs/</code> and link them here.
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="grid">
+      <div class="col-8">
+        <div style="font-weight:750; color: var(--ink); margin-bottom:6px;">Cole Dustin</div>
+        <div>Built for GitHub Pages. Iowa State-inspired colors (cardinal + gold).</div>
+      </div>
+      <div class="col-4" style="text-align:right;">
+        <a class="underline" href="../../contact/index.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
