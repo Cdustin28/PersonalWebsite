@@ -20,8 +20,8 @@
       <a data-nav href="./index.html#senior-design">Senior Design</a>
       <a data-nav href="./index.html#projects">Projects</a>
       <a data-nav href="./index.html#js-demos">Demos</a>
-      <a data-nav href="./index.html#js-demos">Demos</a>
-      <a data-nav href="./resume/index.html">Resume</a>
+      
+<a data-nav href="./resume/index.html">Resume</a>
       <a data-nav href="./reflections/index.html">Reflections</a>
       <a data-nav href="./contact/index.html">Contact</a>
     </nav>
@@ -36,15 +36,12 @@
           <h1>Cole Dustin</h1>
           <p class="subhead">
             RF Electrical Engineer with hands-on experience designing and debugging hardware—from
-            microwave-frequency PCBs to sensor-based embedded systems.
+            microwave-frequency PCBs to embedded sensing systems.
           </p>
           <div class="hero-actions">
             <a class="btn primary" href="#senior-design">View Senior Design</a>
             <a class="btn" href="#projects">Browse Projects</a>
             <a class="btn" href="./resume/index.html">Resume</a>
-          </div>
-          <div style="margin-top:14px" class="callout">
-            Tip: Anywhere you see <strong>[IMAGE HERE]</strong>, you can drop an image into <code>/assets/img/</code> and update the page to point to it.
           </div>
         </div>
 
@@ -54,8 +51,8 @@
             <div class="v">RF • Circuits • Systems</div>
           </div>
           <div class="stat">
-            <div class="k">Theme</div>
-            <div class="v">Cardinal + Gold</div>
+            <div class="k">Graduation</div>
+            <div class="v">May 2026</div>
           </div>
           <div class="stat">
             <div class="k">What’s new</div>
@@ -75,20 +72,19 @@
 
       <div class="grid">
         <div class="col-12 card project-card">
-          <div class="project-thumb">
+          <div class="project-thumb" style="height:320px;">
             <img src="./assets/img/BESS_CAD_Drawing.png" alt="BESS CAD drawing" />
             <div class="thumb-label">BESS CAD drawing</div>
-</div>
+          </div>
           <div class="project-body">
             <h3>Battery Energy Storage System (BESS)</h3>
             <p>
-              <strong>Project detail page:</strong> sizing, standards, safety considerations, and design decisions.
-              (Add your specific role + specs when you’re ready.)
+              25MW / 100MWh. ~30% design process phase with CAD layout, ETAP system layout, and studies (cable thermal + electrical safety).
             </p>
             <div class="meta">
               <span class="pill">Senior design</span>
-              <span class="pill">Standards-driven design</span>
-              <span class="pill">Safety + maintainability</span>
+              <span class="pill">ETAP</span>
+              <span class="pill">Safety analysis</span>
             </div>
             <div style="margin-top:12px">
               <a class="btn small primary" href="./projects/bess/index.html">Open project</a>
@@ -104,11 +100,79 @@
     <div class="container">
       <div class="section-title">
         <h2>Major Projects</h2>
-        <p>Three highlighted Iowa State projects + one in progress</p>
+        <p>Highlighted Iowa State projects + one in progress</p>
       </div>
 
       <div class="grid">
-</div>
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/microwave-pcb.jpg" alt="Microwave PCB photo" />
+            <div class="thumb-label">Microwave PCB</div>
+          </div>
+          <div class="project-body">
+            <h3>Microwave Frequency PCB</h3>
+            <p>Microwave-frequency signal chain PCB (oscillator + amplifier + filter). Measurement results coming soon.</p>
+            <div class="meta">
+              <span class="pill">RF</span><span class="pill">PCB</span><span class="pill">Measurement</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/microwave-pcb/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/OpticalSensorPCBImage.png" alt="Optical signaling PCB" />
+            <div class="thumb-label">Optical signaling</div>
+          </div>
+          <div class="project-body">
+            <h3>Optical Signaling Device (EE 230)</h3>
+            <p>IR transmitter/receiver pair using oscillators, filtering, and amplification to distinguish two tones.</p>
+            <div class="meta">
+              <span class="pill">Analog</span><span class="pill">Filters</span><span class="pill">Prototyping</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/optical-signaling/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/MIMO_FMCW_Vivaldi_Radar.png" alt="MIMO FMCW radar concept" />
+            <div class="thumb-label">MIMO FMCW radar</div>
+          </div>
+          <div class="project-body">
+            <h3>MIMO FMCW Radar (in progress)</h3>
+            <p>Parts ordered; architecture planned with 11 PCBs (8 antennas + VCO + RX + TX). My focus: Vivaldi antenna design.</p>
+            <div class="meta">
+              <span class="pill">Radar</span><span class="pill">MIMO</span><span class="pill">Antenna</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/mimo-fmcw-radar/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/BESS_Overview.png" alt="BESS overview" />
+            <div class="thumb-label">BESS overview</div>
+          </div>
+          <div class="project-body">
+            <h3>Battery Energy Storage System (BESS) — Additional Figures</h3>
+            <p>Extra diagrams and supporting visuals from the capstone design (overview + layout).</p>
+            <div class="meta">
+              <span class="pill">Power systems</span><span class="pill">Layout</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/bess/index.html">Open project</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </div>
   </section>
 
@@ -120,85 +184,66 @@
       </div>
 
       <div class="grid">
-        <article class="col-6 card pad">
-          <h3 style="margin-top:0;">Bubble Sort in Digital Logic (CPR E 281)</h3>
-          <p style="color:var(--muted); margin-top:0;">
-            Implemented a register-file + FSM-based bubble-sort design in digital logic (with a comparator built from an adder/subtractor).
-          </p>
-          <a class="btn small primary" href="./projects/cpre281-bubble-sort/index.html">Open project</a>
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/BubbleSortOverview.png" alt="Bubble sort overview" />
+            <div class="thumb-label">CPR E 281</div>
+          </div>
+          <div class="project-body">
+            <h3>Bubble Sort in Digital Logic (CPR E 281)</h3>
+            <p>Register-file + FSM-based bubble sort implementation with comparator built from adder/subtractor logic.</p>
+            <div class="meta">
+              <span class="pill">Digital logic</span><span class="pill">FSM</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/cpre281-bubble-sort/index.html">Open project</a>
+            </div>
+          </div>
         </article>
 
-        <article class="col-6 card pad">
-          <h3 style="margin-top:0;">Maze-Solving Robot Proposal (CPR E 288)</h3>
-          <p style="color:var(--muted); margin-top:0;">
-            Proposal + design vision for a robot to navigate a maze and support mapping/search & rescue use cases.
-          </p>
-          <a class="btn small primary" href="./projects/cpre288-maze-robot/index.html">Open project</a>
+        <article class="col-6 card project-card">
+          <div class="project-thumb">
+            <img src="./assets/img/CybotImage.jpg" alt="CyBot platform" />
+            <div class="thumb-label">CPR E 288</div>
+          </div>
+          <div class="project-body">
+            <h3>Maze-Solving Robot Proposal (CPR E 288)</h3>
+            <p>Sensor-driven robot concept for maze navigation and mapping use cases (proposal + planned hardware).</p>
+            <div class="meta">
+              <span class="pill">Embedded</span><span class="pill">Sensors</span>
+            </div>
+            <div style="margin-top:12px">
+              <a class="btn small primary" href="./projects/cpre288-maze-robot/index.html">Open project</a>
+            </div>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-
   <section class="section" id="js-demos">
     <div class="container">
       <div class="section-title">
         <h2>JavaScript Demos</h2>
-        <p>Interactive mini-projects (hosted on this site)</p>
+        <p>Interactive mini-projects</p>
       </div>
 
       <div class="grid">
-        <article class="col-4 card project-card">
-          <div class="project-thumb">
-            <div class="thumb-label">[IMAGE HERE] Demo thumbnail</div>
-          </div>
-          <div class="project-body">
-            <h3>JavaScript Demo #1</h3>
-            <p>Interactive demo placeholder. Replace title/description and embed your app.</p>
-            <div class="meta">
-              <span class="pill">JavaScript</span><span class="pill">Interactive</span>
-            </div>
-            <div style="margin-top:12px">
-              <a class="btn small primary" href="./demos/demo-1/index.html">Open demo</a>
-            </div>
-          </div>
+        <article class="col-6 card pad">
+          <h3 style="margin-top:0;">Fourier Transform — Square Wave</h3>
+          <p style="color:var(--muted); margin-top:0;">
+            Interactive visualization built with p5.js.
+          </p>
+          <a class="btn small primary" href="./demos/fourier-transform-square-wave/index.html">Open demo</a>
         </article>
 
-        <article class="col-4 card project-card">
-          <div class="project-thumb">
-            <div class="thumb-label">[IMAGE HERE] Demo thumbnail</div>
-          </div>
-          <div class="project-body">
-            <h3>JavaScript Demo #2</h3>
-            <p>Interactive demo placeholder. Drop your files into <code>/demos/demo-2/</code>.</p>
-            <div class="meta">
-              <span class="pill">JavaScript</span><span class="pill">UI</span>
-            </div>
-            <div style="margin-top:12px">
-              <a class="btn small primary" href="./demos/demo-2/index.html">Open demo</a>
-            </div>
-          </div>
+        <article class="col-6 card pad">
+          <h3 style="margin-top:0;">Conway’s Game of Life</h3>
+          <p style="color:var(--muted); margin-top:0;">
+            Cellular automata simulation built with p5.js.
+          </p>
+          <a class="btn small primary" href="./demos/game-of-life/index.html">Open demo</a>
         </article>
-
-        <article class="col-4 card project-card">
-          <div class="project-thumb">
-            <div class="thumb-label">[IMAGE HERE] Demo thumbnail</div>
-          </div>
-          <div class="project-body">
-            <h3>JavaScript Demo #3</h3>
-            <p>Interactive demo placeholder. Replace with your coolest web tool.</p>
-            <div class="meta">
-              <span class="pill">JavaScript</span><span class="pill">Tool</span>
-            </div>
-            <div style="margin-top:12px">
-              <a class="btn small primary" href="./demos/demo-3/index.html">Open demo</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="callout" style="margin-top:14px;">
-        To add your own demos: put each project in <code>/demos/&lt;demo-name&gt;/</code> with its own <code>index.html</code>, then update the cards above.
       </div>
     </div>
   </section>
@@ -226,7 +271,6 @@
       </div>
     </div>
   </section>
-
 </main>
 <footer class="footer">
   <div class="container">
