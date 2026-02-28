@@ -18,6 +18,7 @@
       <a data-nav href="../../index.html#home">Home</a>
       <a data-nav href="../../index.html#senior-design">Senior Design</a>
       <a data-nav href="../../index.html#projects">Projects</a>
+      <a data-nav href="../../index.html#js-demos">Demos</a>
       <a data-nav href="../../resume/index.html">Resume</a>
       <a data-nav href="../../reflections/index.html">Reflections</a>
       <a data-nav href="../../contact/index.html">Contact</a>
@@ -37,17 +38,21 @@
       <span class="pill">Radar</span><span class="pill">MIMO</span><span class="pill">FMCW</span><span class="pill">In progress</span>
     </div>
 
-    <div class="figure" style="margin:16px 0;">
-      <strong>[IMAGE HERE]</strong> Replace this block with an image or gallery.
-      <div style="margin-top:8px;">Suggestion: put images in <code>/assets/img/</code> and reference them here.</div>
-    </div>
+    <div class="card project-card" style="margin:16px 0;">
+  <div class="project-thumb" style="height:320px;">
+    <img src="../../assets/img/MIMO_FMCW_Vivaldi_Radar.png" alt="MIMO FMCW Vivaldi radar concept" />
+    <div class="thumb-label">Vivaldi antenna concept</div>
+  </div>
+</div>
+</div>
 
     <div class="card pad">
       <h2 style="margin-top:0;">Overview</h2>
       <ul>
-        <li>Define system goals (range, bandwidth, resolution, number of channels).</li>
-<li>Add architecture and signal processing pipeline.</li>
-<li>Add early results as plots or screenshots.</li>
+        <li><strong>Status:</strong> In progress — parts ordered and integration work underway.</li>
+        <li><strong>My task:</strong> Design the Vivaldi antenna for the radar front-end.</li>
+        <li><strong>Hardware plan:</strong> 11 PCBs total — 8 antenna boards, plus 1 VCO board, 1 receiver board, and 1 transmitter board.</li>
+        <li><strong>[IMAGE HERE]</strong> Add block diagram + early simulation/results as they are created.</li>
       </ul>
     </div>
 
@@ -64,7 +69,14 @@
 
 
     <div style="height:16px"></div>
-    <div class="card pad soft">
+    <h2>Design Documents</h2>
+<div class="card pad soft">
+<ul>
+  <li><a class="underline" href="../../assets/docs/projects/MIMO_FMCW_Radar_Design_Doc.pdf">MIMO FMCW Radar Design Doc (add file here)</a></li>
+</ul>
+</div>
+
+<div class="card pad soft">
       <strong>Files:</strong>
       <div style="color:var(--muted); margin-top:6px;">
         If you want to attach reports, PDFs, or datasheets, drop them into <code>/assets/docs/</code> and link them here.

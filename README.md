@@ -29,3 +29,8 @@ This is a static site (HTML/CSS/JS) designed to be uploaded directly to GitHub P
 
 ## Image placeholders
 Search for: `[IMAGE HERE]` and replace blocks with `<img>` tags or galleries.
+
+
+## JavaScript demos
+- Add interactive projects under `/demos/<name>/` (each should have its own `index.html`).
+- The homepage section links to `/demos/demo-1/`, `/demos/demo-2/`, `/demos/demo-3/` as placeholders.
